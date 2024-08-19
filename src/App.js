@@ -15,7 +15,7 @@ import Detail from "./pages/Detail";
 
 function App() {
   const ctx = useContext(Context);
-  // console.log(ctx);
+  console.log(ctx);
   return (
     <Router>
       <main>

@@ -20,12 +20,12 @@ function App() {
     <Router>
       <main>
         <Routes>
-          <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<Auth />} />
           <Route path="/todo/:detail" element={<Detail />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/event/:id" element={<EventForm />} />
           <Route path="/event/new" element={<EventForm />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
     </Router>

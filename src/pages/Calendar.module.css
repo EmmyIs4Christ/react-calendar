@@ -1,0 +1,70 @@
+.calendarContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: solid 1px rgb(124, 121, 121);
+  background-color: #f1f2f3;
+}
+
+.eventButton {
+  margin-left: 10px;
+}
+
+.cComponent {
+  /* padding: 1rem; */
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.eventItem .li {
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-right: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+span {
+  color: rgb(197, 139, 62);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendarContainer {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .event-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .eventButton {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarContainer {
+    padding: 10px;
+  }
+
+  .eventItem {
+    font-size: 14px;
+  }
+
+  .eventButton {
+    font-size: 12px;
+  }
+}
